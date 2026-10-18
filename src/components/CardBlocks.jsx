@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 
-const card = [
+const timeslots = [
   { time: "6-7 AM", status: "done" },
   { time: "9-10 AM", status: "now" },
   { time: "12-1 PM", status: "upcoming" },
@@ -11,7 +11,7 @@ const card = [
 function CardBlocks() {
   return (
     <div className="mt-4 grid grid-cols-5 gap-2">
-      {card.map((block) => (
+      {timeslots.map((block) => (
         <div
           key={block.time}
           className={`flex h-[70px] flex-col items-center justify-center rounded-2xl border text-xs font-bold ${
